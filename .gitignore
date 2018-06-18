@@ -30,3 +30,10 @@
 
 # Debug files
 *.dSYM/
+
+# Switch outputs
+*.nacp
+*.nro
+*.nso
+*.pfs0
+build
