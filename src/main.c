@@ -16,7 +16,7 @@ Mix_Music* music;
 
 void initAudio()
 {
-  Mix_Init(MIX_INIT_MP3);
+  if(Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) < 0) SDL_Quit();
   music = Mix_LoadMUS("audio.mp3");
 }
 
